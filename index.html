@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms Assignment</title>
+    <script type="text/javascript" src="main.js"></script>
+    <style>
+      #secret {
+        font-size: 20px;
+        width: 400px;
+        height: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      <form id="formOne">
+        <div class="form-field">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" />
+          <small></small>
+        </div>
+        <br />
+        <div class="form-field">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" />
+          <small></small>
+        </div>
+        <br />
+        <div class="form-field">
+          <label for="date">Date:</label>
+          <input type="date" id="date" name="date" />
+          <small></small>
+        </div>
+        <br />
+        <div class="form-field">
+          <label for="alive">Are you alive?</label>
+          <input type="radio" id="aliveY" name="alive" value="Yes" />
+          <label for="aliveY"> Yes</label>
+          <input type="radio" id="aliveN" name="alive" value="No" />
+          <label for="aliveN"> No</label><br />
+          <small></small>
+        </div>
+        <br />
+        Select the animals you like:
+        <div class="checkboxGroup">
+          <input type="checkbox" id="dog" name="dog" value="Dogs" />
+          <label for="dog"> Dogs </label>
+          <input type="checkbox" id="cat" name="cat" value="Cats" />
+          <label for="cat"> Cats </label>
+          <input type="checkbox" id="bird" name="bird" value="Birds" />
+          <label for="bird"> Birds </label><br />
+          <small></small>
+          <br />
+        </div>
+        <br />
+        <div class="form-field">
+          <label for="secret">Tell me a secret:</label>
+          <br />
+          <textarea id="secret" name="secret" cols="50" rows="10"></textarea>
+          <br />
+          <small></small>
+        </div>
+        <br />
+
+        <div class="form-field">
+          <label for="clothing">Choose an article of clothing:</label>
+          <br />
+          <select name="clothing" id="clothing">
+            <option value="Hat">Hat</option>
+            <option value="Shoes">Shoes</option>
+            <option value="Top">Top</option>
+            <option value="Scarf">Scarf</option>
+          </select>
+          <small></small>
+        </div>
+
+        <br />
+        <input type="button" onclick="validateInput()" value="Submit" />
+      </form>
+    </div>
+    <p id="output"></p>
+  </body>
+</html>
